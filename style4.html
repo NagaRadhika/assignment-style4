@@ -1,0 +1,224 @@
+<html>
+
+<head>
+<style>
+#main{
+
+width:100%;height:99%;border:1px solid pink;
+background-image:url("img.jpg");
+
+
+}
+
+#division1{
+
+ width:84%;
+ height:99%;
+
+ float:left;
+
+}
+#img{
+ width:220px;
+ height:130px;
+ border-radius:220px;
+ float:left;
+
+}
+
+#division2{
+
+ width:15%;
+ height:99%;
+
+ float:left;
+ background-color: #333;
+}
+
+#p{
+ color:white;
+ text-align:center;
+}
+
+header
+{
+color:white;
+
+margin:0px 0px 0px 50px;
+font-size:50px;
+
+}
+
+
+
+
+sub{
+  font-size:30px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    
+   
+}
+
+li {
+    border-right:1px solid #bbb;
+    font-size:20px;
+    width:300px;
+    height:50px;
+    margin:0px -30px 0px -30px;
+   
+    color: white;
+}
+li a {
+    display: block;
+    color: white;
+    text-decoration:none;
+    
+    
+}
+li :hover:not(.active) {
+    background-color: #4CAF50;
+}
+
+
+ #section1 {
+        width: 27%;
+        height: 17%;
+        
+        margin-top: 200px;
+        margin-left: 500px;
+    }
+    
+   #part1 {
+        background-color: yellow;
+        width: 30%;
+        height: 100%;
+        color: white;
+        
+        text-align: center;
+        float: left;
+    }
+    
+    #part2 {
+        background-color: green;
+        width: 70%;
+        height: 100%;
+    
+        text-align: center;
+        float:right;
+    } 
+    #parta{
+        width: 100%;
+        height: 50%;
+        background-color: red;
+    }
+     #partb{
+        width: 100%;
+        height: 50%;
+        background-color:blue;
+    }
+ 
+</style>
+<script>
+
+         function fun1()
+    {
+        var month=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        var week=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        var d=new Date();
+        var date=d.getDate();
+        var day=d.getDay();
+        var mon=d.getMonth();
+        var h=d.getHours();
+        var min=d.getMinutes();
+        var am="AM"
+        if(h>12){
+            am="pm";
+        }
+
+        document.getElementById("p1").innerHTML= date+" "+ month[mon];
+        document.getElementById("p2").innerHTML= week[day];
+         document.getElementById("p3").innerHTML= h;
+         document.getElementById("p5").innerHTML= min+"  "+am;
+    }
+
+   
+   
+
+     
+   
+
+
+</script>
+</head>
+
+<body onload="fun1()">
+
+<div id="main">
+
+ 
+   
+    <div id="division1">
+
+   
+          <header> <img src="2.png" style="width:220px;height:130px;border-radius:220px;float:left;" >
+        
+                      Digital Noon<sub> tick tick</sub>
+
+
+
+           </header>
+   
+ 		<div id="section1">
+           <div id="part1">
+            <div id="parta"><span id="p1" style="font-size:25px; padding:7px;"></span></div>
+            <div id="partb"><span id="p2" style="font-size:25px; padding:7px;"></span></div>
+
+
+
+           </div>
+           <div id="part2"><span id="p3" style="font-size:50px;"></span><span id="p4" style="font-size:50px;opacity:0.7;">:</span><span id="p5" style="font-size:50px;"></span></div>
+        </div>
+
+	
+
+	
+
+
+
+    </div>
+    <div id="division2">
+
+        <p style="color:white;text-align:center;">Choose Style</p>
+
+             
+             <ul>
+
+               <li><a href="style1.html">style1</a>  </li>
+               <li><a href="style2.html">style2</a>  </li>
+               <li><a href="style3.html">style3</a>  </li>
+               <li><a href="style4.html">style4</a>  </li>
+               <li ><a href="style5.html">style5</a>  </li>
+
+             </ul><hr>
+<p style="color:white;text-align:center;"> Set Time</p>
+
+
+
+    </div>
+
+<footer>     </footer>
+
+
+     
+
+</div>
+
+
+</body>
+
+</html>
